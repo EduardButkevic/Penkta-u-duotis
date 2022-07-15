@@ -10,6 +10,7 @@
 
 <body>
     <script>
+        console.log("-------------------------------");
         // Pirma užduotis
         console.log("Pirma užduotis")
         let name = "Eduard";
@@ -31,6 +32,7 @@
                 console.log((kintamasis2 / kintamasis1).toFixed(2));
             }
         }
+        console.log("-------------------------------");
         // Trečia užduotis
         console.log("Trečia užduotis");
         let a = Math.ceil(Math.random() * 25);
@@ -44,20 +46,65 @@
         else if (b <= a && a <= c) { console.log(a); }
         else if (a >= c && c >= b) { console.log(c); }
         else if (a <= c && c <= b) { console.log(c); }
+        console.log("-------------------------------");       
         //  Ketvirta užduotis
         console.log("Ketvirta užduotis");
         let a1 = Math.ceil(Math.random() * 10);
         let b1 = Math.ceil(Math.random() * 10);
         let c1 = Math.ceil(Math.random() * 10);
 
-        if ((a + b > c) || (a + c > b) || (b + c > a)) { console.log("Trikampis"); }
+        if ((a1 + b1 > c1) || (a1 + c1 > b1) || (b1 + c1 > a1)) { console.log("Trikampis"); }
         else { console.log("Trikampis negalimas"); }
+        console.log("-------------------------------");
         //  Penkta užduotis
         console.log("Penkta užduotis");
         let a2 = Math.round(Math.random() * 2);
         let b2 = Math.round(Math.random() * 2);
         let c2 = Math.round(Math.random() * 2);
         let d2 = Math.round(Math.random() * 2);
+
+        // let age = 18
+        // let message;
+        // age >= 16 ? (message = 1) : (message = 19);
+        // console.log(message);
+
+        // console.log(message + message+message);
+
+        let a2val0;
+        let b2val0;
+        let c2val0;
+        let d2val0;
+        
+        a2 == 0 ? (a2val0 = 1) : (a2val0 = 0);
+        b2 == 0 ? (b2val0 = 1) : (b2val0 = 0);
+        c2 == 0 ? (c2val0 = 1) : (c2val0 = 0);
+        d2 == 0 ? (d2val0 = 1) : (d2val0 = 0);
+
+        let a2val1;
+        let b2val1;
+        let c2val1;
+        let d2val1;
+        
+        a2 == 1 ? (a2val1 = 1) : (a2val1 = 0);
+        b2 == 1 ? (b2val1 = 1) : (b2val1 = 0);
+        c2 == 1 ? (c2val1 = 1) : (c2val1 = 0);
+        d2 == 1 ? (d2val1 = 1) : (d2val1 = 0);
+
+        let a2val2;
+        let b2val2;
+        let c2val2;
+        let d2val2;
+        
+        a2 == 2 ? (a2val2 = 1) : (a2val2 = 0);
+        b2 == 2 ? (b2val2 = 1) : (b2val2 = 0);
+        c2 == 2 ? (c2val2 = 1) : (c2val2 = 0);
+        d2 == 2 ? (d2val2 = 1) : (d2val2 = 0);
+
+
+        console.log("Zeros= " + (a2val0 + b2val0 + c2val0 + d2val0));
+        console.log("Ones= " + (a2val1 + b2val1 + c2val1 + d2val1));
+        console.log("Twos= " + (a2val2 + b2val2 + c2val2 + d2val2));
+
     </script>
 
 </body>
