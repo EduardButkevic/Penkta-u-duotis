@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Pirma užduotis
+        console.log("Pirma užduotis")
+        let name = "Eduard";
+        let surname = "Butkevič";
+        let birthday = "1988";
+        let year = "2022";
+        console.log("Aš esu " + name + " " + surname + ".Man yra " + (year - birthday) + ".");
+        console.log("Antra užduotis");
+        // Antra užduotis
+        let kintamasis1 = Math.round(Math.random() * 4);
+        let kintamasis2 = Math.round(Math.random() * 4);
+
+        console.log(kintamasis1);
+        console.log(kintamasis2);
+
+        if (kintamasis1 != 0 && kintamasis2 != 0) {
+            if (kintamasis1 > kintamasis2) { console.log((kintamasis1 / kintamasis2).toFixed(2)); }
+            else {
+                console.log((kintamasis2 / kintamasis1).toFixed(2));
+            }
+        }
+        // Trečia užduotis
+        console.log("Trečia užduotis");
+        let a = Math.ceil(Math.random() * 25);
+        let b = Math.ceil(Math.random() * 25);
+        let c = Math.ceil(Math.random() * 25);
+        console.log("Result");
+
+        if (a >= b && b >= c) { console.log(b); }
+        else if (a <= b && b <= c) { console.log(b); }
+        else if (b >= a && a >= c) { console.log(a); }
+        else if (b <= a && a <= c) { console.log(a); }
+        else if (a >= c && c >= b) { console.log(c); }
+        else if (a <= c && c <= b) { console.log(c); }
+        //  Ketvirta užduotis
+        console.log("Ketvirta užduotis");
+        let a1 = Math.ceil(Math.random() * 10);
+        let b1 = Math.ceil(Math.random() * 10);
+        let c1 = Math.ceil(Math.random() * 10);
+
+        if ((a + b > c) || (a + c > b) || (b + c > a)) { console.log("Trikampis"); }
+        else { console.log("Trikampis negalimas"); }
+        //  Penkta užduotis
+        console.log("Penkta užduotis");
+        let a2 = Math.round(Math.random() * 2);
+        let b2 = Math.round(Math.random() * 2);
+        let c2 = Math.round(Math.random() * 2);
+        let d2 = Math.round(Math.random() * 2);
+    </script>
+
+</body>
+
+</html>
